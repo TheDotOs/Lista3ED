@@ -1,4 +1,8 @@
 O algoritmo Quick Sort é valorizado por sua eficiência prática, alcançando uma complexidade média de O(NlogN). 
-No entanto, sua principal fraqueza é o pior caso de O(N2), que ocorre quando a escolha do pivô leva consistentemente a partições extremamente desequilibradas, como em listas já ordenadas ou em ordem inversa. Para melhorar o desempenho do Quick Sort e mitigar a ocorrência do pior caso, utiliza-se a estratégia do "Quick Sort Mediana de Três". 
-Essa técnica modifica a seleção do pivô: em vez de escolher o primeiro, o último ou um elemento aleatório, seleciona-se três elementos da sublista (geralmente o primeiro, o central e o último) e o elemento que é a mediana desses três é usado como o pivô.
-Ao garantir que o pivô não será o menor nem o maior desses três elementos, a estratégia aumenta a probabilidade de o pivô dividir a lista de forma mais equilibrada, tornando o desempenho prático muito mais robusto e minimizando a chance de degradação para O(N2).
+No entanto, sua principal fraqueza é o pior caso de O(N2), que ocorre quando a escolha do pivô leva consistentemente 
+a partições extremamente desequilibradas, como em listas já ordenadas ou em ordem inversa. Para melhorar o desempenho do Quick Sort e mitigar a ocorrência do pior caso
+, utiliza-se a estratégia do "Quick Sort Mediana de Três". 
+Essa técnica modifica a seleção do pivô: em vez de escolher o primeiro, o último ou um elemento aleatório, seleciona-se três
+elementos da sublista (geralmente o primeiro, o central e o último) e o elemento que é a mediana desses três é usado como o pivô.
+Ao garantir que o pivô não será o menor nem o maior desses três elementos, a estratégia aumenta a probabilidade de o pivô dividir 
+a lista de forma mais equilibrada, tornando o desempenho prático muito mais robusto e minimizando a chance de degradação para O(N2).
