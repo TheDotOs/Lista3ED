@@ -1,0 +1,35 @@
+Prezados Programadores,
+
+O objetivo primário do nosso projeto é desenvolver um novo sistema de roteamento que otimize o tempo de entrega das encomendas. Este projeto é fundamental para a satisfação do cliente e a eficiência operacional. A chave para o sucesso é a escolha de algoritmos que garantam um tempo de resposta rápido e sejam escaláveis.
+
+a. A Importância de Considerar a Complexidade Algorítmica
+
+O problema de otimização de rotas que estamos abordando é, em sua essência, similar ao Problema do Caixeiro Viajante (Traveling Salesperson Problem), que pertence à classe de problemas NP-difíceis.
+
+    Inviabilidade de Soluções Exatas: Uma solução que garanta a rota absolutamente mais curta (solução exata) para N pontos de entrega pode ter uma complexidade de tempo de execução fatorial (O(N!)) ou exponencial (O(2N)). Para um pequeno número de entregas (ex: 25), o tempo de cálculo se tornaria inviável (horas ou dias), inviabilizando a operação em tempo real.
+
+    Escalabilidade e Tempo de Resposta: Em um ambiente de entregas, a velocidade de cálculo é vital. A complexidade algorítmica afeta diretamente a escalabilidade do sistema, ou seja, a capacidade de lidar com um número crescente de entregas (N) e motoristas sem que o tempo de resposta se torne inaceitável. Para mantermos o tempo de cálculo abaixo de um limite aceitável (por exemplo, poucos segundos), devemos priorizar heurísticas e meta-heurísticas em vez de buscas exaustivas.
+
+    Decisão de Compromisso: A complexidade nos força a aceitar um compromisso entre a qualidade da otimização e a velocidade de cálculo. É preferível encontrar uma rota "muito boa" em segundos do que a rota "perfeita" em horas.
+
+b. Uso da Notação Big O para Comparar Algoritmos
+
+A Notação Big O é a principal ferramenta que usaremos para comparar e determinar a eficiência dos algoritmos de roteamento propostos.
+
+    Previsão do Crescimento: A Notação Big O descreve o limite superior da taxa de crescimento do tempo de execução do algoritmo à medida que o tamanho da entrada (N, o número de paradas) aumenta. Ela permite prever como o tempo de processamento se comportará para N grande.
+
+    Critério de Comparação: Ao comparar dois algoritmos, aquele com o Big O de crescimento mais lento será, invariavelmente, o mais eficiente para grandes volumes de dados. Por exemplo:
+
+        Algoritmo A (Busca Exaustiva): O(N!) – Rejeitado
+
+        Algoritmo B (Heurística do Vizinho Mais Próximo): O(N2) – Aceitável
+
+        Algoritmo C (Meta-heurística Avançada): O(N3) – Aceitável
+
+Diretriz para a Programação:
+
+A prioridade do projeto será selecionar e implementar algoritmos cuja complexidade seja polinomial e baixa. A meta é manter a complexidade abaixo de O(N3).
+
+    Busquem soluções que se aproximem de O(N2) (quadrática) ou O(NlogN) (para componentes do algoritmo, como ordenação), mesmo que isso signifique utilizar heurísticas de aproximação em vez de algoritmos de busca exata.
+
+    A Notação Big O servirá como um critério de desempate técnico para justificar a escolha da solução final que garante a escalabilidade necessária para suportar o crescimento futuro da empresa.
